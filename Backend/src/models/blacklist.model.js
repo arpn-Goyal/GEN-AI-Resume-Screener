@@ -7,5 +7,5 @@ const blacklistSchema = await mongoose.Schema({
     }
 }, {timestamps: true})
 
-const tokenBlacklistModel = mongoose.model('users', blacklistSchema);
-export default userModel;
+const tokenBlacklistModel = mongoose.model('blacklistTokens', blacklistSchema);
+export default tokenBlacklistModel;

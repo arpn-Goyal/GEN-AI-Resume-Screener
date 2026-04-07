@@ -133,5 +133,4 @@ export const getMeController = async(req, res) =>{
             email: user.email
         }
     })
-
 }

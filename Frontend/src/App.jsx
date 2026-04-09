@@ -1,10 +1,12 @@
 import { RouterProvider } from "react-router";
 import { router } from "./app.router.jsx";
-
+import { AuthProvider } from "./features/auth/auth.contex.jsx";
 function App() {
   return (
-    <RouterProvider router={router}/>
-  )
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;
